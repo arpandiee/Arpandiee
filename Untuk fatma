@@ -43,19 +43,46 @@
         }
 
         .letter {
-        
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 80%;
+            background: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            z-index: 1;
+        }
 
-<!--
-**arpandiee/Arpandiee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+        .container:hover .envelope::before {
+            transform: rotateX(180deg);
+            z-index: 0;
+        }
 
-Here are some ideas to get you started:
+        .container:hover .letter {
+            bottom: 100px;
+            z-index: 2;
+        }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        h2 { font-size: 18px; color: #d00000; }
+        p { font-size: 14px; color: #333; }
+        .heart { color: #d00000; font-size: 24px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="envelope"></div>
+    <div class="letter">
+        <div class="heart">❤️</div>
+        <h2>Untuk Istriku Tersayang</h2>
+        <p>Terima kasih sudah selalu ada di sampingku. Kamu adalah hal terbaik yang pernah terjadi dalam hidupku.</p>
+        <p><strong>I Love You!</strong></p>
+    </div>
+</div>
+
+</body>
+</html>
